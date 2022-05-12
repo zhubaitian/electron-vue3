@@ -17,6 +17,15 @@ npm run electron:serve
 npm run electron:build
 ```
 
+## Notes
+
+### File Structure
+- @/background.ts: Main process
+- @/views/: Renderer process implemeted with Vue3.x support, our works should be focus on implementing our businiess logic under this folder
+- @/App.vue: Support router view, so that we could use router.push() and related functions in our vue files 
+- @/router/index.ts: Router definition file
+- @/store/: vuex store. todo: replace vuex with pinia
+- @preload/: todo: preload related features support
 
 ## Q&A
 
